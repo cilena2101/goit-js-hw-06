@@ -5,6 +5,8 @@ function onInputBlur(event) {
 	if (event.currentTarget.value.length == textInput.dataset.length) {
 		textInput.classList.add('valid');
 		textInput.classList.remove('invalid');
-	} else
+	} else {
+		textInput.classList.remove('valid');
 		textInput.classList.add('invalid');
+	}		
 }
